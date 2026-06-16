@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
@@ -11,16 +11,199 @@
     </style>
     <title>Document</title>
     <!-- Abdulloh -->
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="main">
-        <div class="section1">
-            <div class="container">
-                
+      <div class="section1">
+        <div class="container max-w-[1200px] mx-auto">
+          <div class="">
+            <p>
+              <span class="text-[#363A45] text-[12px] mb-[20px]"
+                >Главная страница > Категории ></span
+              >Телефоны и аксессуары
+            </p>
+            <h1 class="text-[30px] text-[#363A45] font-bold mb-[20px]">
+              Смартфоны
+            </h1>
+            <div class="flex gap-6 mb-[20px]">
+              <button
+                class="w-[66px] h-[40px] rounded-[10px] shadow-lg shadow-[#363A4514] font-medium text-[#363A45] text-[12px]"
+              >
+                Apple
+              </button>
+              <button
+                class="w-[66px] h-[40px] rounded-[10px] shadow-lg shadow-[#363A4514] font-medium text-[#363A45] text-[12px]"
+              >
+                Samsung
+              </button>
+              <button
+                class="w-[66px] h-[40px] rounded-[10px] shadow-lg shadow-[#363A4514] font-medium text-[#363A45] text-[12px]"
+              >
+                Huawei
+              </button>
+              <button
+                class="w-[66px] h-[40px] rounded-[10px] shadow-lg shadow-[#363A4514] font-medium text-[#363A45] text-[12px]"
+              >
+                Xiaomi
+              </button>
+              <button
+                class="w-[66px] h-[40px] rounded-[10px] shadow-lg shadow-[#363A4514] font-medium text-[#363A45] text-[12px]"
+              >
+                Honor
+              </button>
+              <button
+                class="w-[66px] h-[40px] rounded-[10px] shadow-lg shadow-[#363A4514] font-medium text-[#363A45] text-[12px]"
+              >
+                Vivo
+              </button>
             </div>
-        </div>
-    </div>
+          </div>
 
-</body>
+          <div class="flex justify-between">
+            <div class="w-[250px]">
+              <div class="bg-white p-5 rounded shadow-sm">
+                <h3 class="text-sm font-medium mb-4">Цена</h3>
+
+                <div class="flex gap-2 mb-3">
+                  <input
+                    type="text"
+                    placeholder="от"
+                    class="w-full border rounded px-2 py-1 text-xs"
+                  />
+                  <input
+                    type="text"
+                    placeholder="до"
+                    class="w-full border rounded px-2 py-1 text-xs"
+                  />
+                </div>
+
+                <div class="relative mb-6">
+                  <div class="h-1 bg-gray-200 rounded"></div>
+                  <div
+                    class="absolute top-0 left-4 right-8 h-1 bg-green-500 rounded"
+                  ></div>
+
+                  <div
+                    class="absolute -top-1 left-3 w-3 h-3 bg-green-500 rounded-full"
+                  ></div>
+                  <div
+                    class="absolute -top-1 right-7 w-3 h-3 bg-green-500 rounded-full"
+                  ></div>
+                </div>
+
+                <div class="mb-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-sm font-medium">Бренд</h3>
+                    <span>⌃</span>
+                  </div>
+
+                  <div class="space-y-2 text-sm text-gray-600">
+                    <label class="flex items-center gap-2">
+                      <input type="checkbox" checked class="accent-green-500" />
+                      Apple
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                      <input type="checkbox" />
+                      Xiaomi
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                      <input type="checkbox" />
+                      Samsung
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                      <input type="checkbox" />
+                      Honor
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                      <input type="checkbox" />
+                      Huawei
+                    </label>
+
+                    <label class="flex items-center gap-2">
+                      <input type="checkbox" />
+                      ZTE
+                    </label>
+                  </div>
+
+                  <button class="mt-3 text-sm text-gray-700">
+                    Показать еще
+                  </button>
+                </div>
+
+                <div class="border-t pt-4 space-y-4">
+                  <div class="flex justify-between">
+                    <span class="text-sm">Объем памяти</span>
+                    <span>⌄</span>
+                  </div>
+
+                  <div class="flex justify-between">
+                    <span class="text-sm">Другие параметры</span>
+                    <span>⌄</span>
+                  </div>
+                </div>
+
+                <div class="mt-6 space-y-3">
+                  <button
+                    class="w-full border border-green-500 text-green-500 rounded-lg py-2 hover:bg-green-50"
+                  >
+                    Применить
+                  </button>
+
+                  <button
+                    class="w-full border border-green-500 text-green-500 rounded-lg py-2 hover:bg-green-50"
+                  >
+                    Сбросить фильтры
+                  </button>
+                </div>
+              </div>
+
+              <div class="bg-white mt-4 p-5 rounded shadow-sm text-center">
+                <h2 class="font-bold text-2xl leading-tight">
+                  Новый смартфон <br />
+                  Galaxy S20 EF
+                </h2>
+
+                <img
+                  src="../images/smartfon/image 188.png"
+                  alt="Samsung"
+                  class="mx-auto my-4"
+                />
+
+                <h3 class="font-bold tracking-widest">SAMSUNG</h3>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] text-[#DADCDC] mr-[605px]">1200</p>
+
+                <div class="flex items-center gap-4">
+                  <p class="text-[#DADCDC] text-[12px]">Сортировать по</p>
+
+                  <p class="text-[12px] text-[#363A45] font-bold">
+                    Новизне <span class="ml-[10px]">⌄</span>
+                  </p>
+
+                  <button class="text-[#2DD06E] text-xl">▦</button>
+                  <button class="text-[#DADCDC] text-xl">☰</button>
+                </div>
+              </div>
+
+              <nav>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+              </nav>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
