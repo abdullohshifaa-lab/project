@@ -1,12 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Sherzod -->
+    <title>telefon</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <body>
+    <header class="bg-white shadow-sm font-sans">
+        <div class="flex items-center px-10 h-12 border-b border-gray-200">
+            <img src="images/Logo (1).png" alt="#">
+            <nav class="flex h-full items-center text-sm text-gray-700">
+                <a href="#" class="px-4 h-full flex items-center hover:text-green-600">Доска объявлений</a>
+                <a href="#" class="px-4 h-full flex items-center hover:text-green-600">Сервисный центр</a>
+                <a href="#"
+                    class="px-5 h-full flex items-center bg-green-100 text-green-900 font-medium">Интернет-магазин
+                    Dily.ru</a>
+                <a href="#" class="px-4 h-full flex items-center hover:text-green-600">Скупка</a>
+            </nav>
+            <div class="ml-auto flex items-center gap-6 text-sm text-gray-600">
+                <div class="flex items-center gap-1 cursor-pointer">
+                    <i class="fa-solid fa-location-arrow text-green-600"></i> Москва <i
+                        class="fa-solid fa-chevron-down text-xs text-gray-400"></i>
+                </div>
+                <div class="flex items-center gap-1 cursor-pointer">
+                    <i class="fa-solid fa-user text-green-600"></i> Вход/ регистрация
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center px-10 py-3 gap-8 bg-gray-50/50">
+            <div class="flex items-center gap-2 text-green-600 font-medium cursor-pointer text-sm">
+                <i class="fa-solid fa-bars"></i> Каталог товаров
+            </div>
+            <div class="flex items-center gap-2 text-gray-700 text-sm cursor-pointer whitespace-nowrap">
+                <i class="fa-solid fa-truck text-gray-400"></i> Доставка и оплата
+            </div>
+
+            <div
+                class="flex flex-1 max-w-md items-center border border-gray-300 rounded-full pl-4 bg-white overflow-hidden ml-4">
+                <i class="fa-solid fa-magnifying-glass text-gray-400 text-xs"></i>
+                <input type="text" placeholder="Я хочу купить..." class="w-full px-2 py-1.5 text-sm outline-none">
+                <button
+                    class="bg-gray-300 hover:bg-gray-400/80 px-6 py-1.5 text-sm text-gray-700 font-medium">Найти</button>
+            </div>
+
+            <div class="ml-auto flex items-center gap-6 text-sm">
+                <a href="#" class="text-gray-800 hover:text-green-600">Поддержка</a>
+                <div class="relative text-gray-600 text-lg cursor-pointer">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span
+                        class="absolute -top-1.5 -right-2 bg-green-600 text-white text-[10px] px-1 rounded-full">1</span>
+                </div>
+                <div class="text-gray-600 text-lg cursor-pointer">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="text-gray-600 text-lg cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="mt-[50px]">
+            <img src="images/Frame 603 (1).png" alt="#">
+        </section>
+        <section class="mt-[200px]">
+            <div class="container">
+                <div>
+                    <h1 class="w-[274px] h-[35px] ml-[135px] text-[32px] text-black ">
+                        Хиты продаж
+                    </h1>
+                </div>
+                <div>
+                    <ul class="flex flex-wrap gap-[50px] justify-center data-aos='fade-right' mt-[40px]">
+                        <li class="shadow-lg shadow-[#363A4514]  w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514]  w-[300px]" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]">10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px]" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]">10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px]" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]">10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px]" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]">10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px]" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]">10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mt-[200px]">
+            <div class="container">
+                <div>
+                    <h1 class="w-[274px] h-[35px] ml-[135px] text-[32px] mt-[50px] text-black">
+                        Новинки
+                    </h1>
+                </div>
+                <div>
+                    <ul class="flex flex-wrap gap-[50px] justify-center data-aos='fade-right' mt-[40px]">
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mt-[200px]">
+            <div class="container">
+                <div class="flex ml-[150px]">
+                    <div>
+                        <img src="images/banner servises.png" alt="">
+                    </div>
+                    <div>
+                        <img src="images/banner servises (1).png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-[200px]">
+            <div class="container">
+                <div>
+                    <h1 class="w-[274px] h-[35px] ml-[135px] text-[32px] mt-[50px] text-black">
+                        Скидки
+                    </h1>
+                </div>
+                <div>
+                    <ul class="flex flex-wrap gap-[50px] justify-center data-aos='fade-right' mt-[40px]">
+                        <li class="shadow-lg shadow-[#363A4514]  w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78 (1).png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Apple MacBook Air 13
+                                золотой
+                            </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 70 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mt-[200px]">
+            <div class="container">
+                <div>
+                    <div>
+                        <img src="images/Frame 113.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-[200px]">
+            <div class="container">
+                <div>
+                    <div>
+                        <img src="images/Frame 115.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-[200px]">
+            <div class="container">
+                <div>
+                    <h1 class="w-[274px] h-[35px] ml-[135px] text-[32px] text-black ">
+                         Cмартфоны
+                    </h1>
+                </div>
+                <div>
+                    <ul class="flex flex-wrap gap-[50px] justify-center data-aos='fade-right' mt-[40px]">
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px] data-aos='fade-right'" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]"> 10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px]" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]">10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px]" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]">10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px]" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]">10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px]" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]">10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+                        <li class="shadow-lg shadow-[#363A4514] w-[300px]" data-aos="flip-down">
+                            <img src="images/Frame 78.png" alt="tu">
+                            <h2 class="font-semibold text-[30px]">Xiaomi Redmi
+                                зеленый </h2>
+                            <p class="font-serif text-[25px] mb-[15px]">10 000 ₽</p>
+                            <button
+                                class="w-full max-w-[240px] bg-white border border-gray-100 py-2.5 rounded-xl text-slate-800 font-medium text-sm flex items-center justify-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.03)] hover:bg-gray-50 active:scale-[0.98] transition-all duration-200">
+                                <span>Купить</span>
+                                <i class="fa-solid fa-cart-shopping text-gray-400 text-base"></i>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+       <section class="mt-[200px]">
+            <div class="container">
+                <div>
+                    <div>
+                        <img src="images/Frame 183.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full bg-[#f8f8f8] py-16 px-6 md:px-16 lg:px-[135px] mt-[200px]">
+  <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-12">
     
+    <div class="max-w-[420px]">
+      <h2 class="text-[#2d313f] font-bold text-3xl md:text-[32px] tracking-tight mb-4">
+        Будь первым!
+      </h2>
+      <p class="text-[#515769] text-base leading-relaxed font-normal">
+        Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми
+      </p>
+    </div>
+
+    <form class="flex-1 max-w-[650px] w-full flex flex-col sm:flex-row items-stretch sm:items-start gap-4">
+      
+      <div class="flex-1 flex flex-col gap-3">
+        <input 
+          type="email" 
+          placeholder="Ваш e-mail" 
+          required
+          class="w-full bg-white border border-[#e2e5ec] rounded-xl px-5 py-3.5 text-base text-gray-800 placeholder-[#a0a7ba] outline-none focus:border-emerald-500 transition-colors shadow-sm"
+        />
+        
+        <label class="flex items-start gap-3 cursor-pointer select-none mt-1">
+          <input 
+            type="checkbox" 
+            required
+            class="w-4 h-4 rounded border-[#e2e5ec] text-emerald-500 focus:ring-emerald-500 mt-1 cursor-pointer"
+          />
+          <span class="text-xs text-[#515769] leading-normal font-normal">
+            Я согласен с условиями обработки 
+            <a href="#" class="text-emerald-500 hover:underline">персональных данных</a>, 
+            a также с <a href="#" class="text-emerald-500 hover:underline">условиями подписки</a>
+          </span>
+        </label>
+      </div>
+
+      <button 
+        type="submit" 
+        class="bg-[#00c853] hover:bg-[#00b248] text-white font-medium text-base px-8 py-3.5 rounded-xl transition-all duration-200 active:scale-[0.98] whitespace-nowrap shadow-md shadow-emerald-500/10"
+      >
+        Подписаться
+      </button>
+
+    </form>
+
+  </div>
+</section>
+    </main>
+    <footer class="w-full bg-[#f4f5f7] text-[#2d313f] font-sans mt-[200px]">
+  
+  <div class="px-6 md:px-16 lg:px-[135px] py-6 border-b border-gray-200">
+    <div class="max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      
+      <div class="flex items-center gap-10">
+        <a href="#" class="text-2xl font-bold text-[#00b22d]">
+          D<span class="text-gray-800 font-medium">ily.ru</span>
+        </a>
+        <div class="flex items-center gap-1.5 text-sm text-gray-600 cursor-pointer hover:text-[#00b22d] transition-colors">
+          <i class="fa-solid fa-location-arrow text-[#00b22d]"></i>
+          <span>Москва</span>
+          <i class="fa-solid fa-chevron-down text-[10px] text-gray-400"></i>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <span class="text-sm font-medium text-gray-700">Присоединяйтесь к нам</span>
+        <div class="flex items-center gap-2">
+          <a href="#" class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#1877f2] shadow-sm hover:opacity-80 transition-opacity">
+            <i class="fa-brands fa-facebook-f text-sm"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#e1306c] shadow-sm hover:opacity-80 transition-opacity">
+            <i class="fa-brands fa-instagram text-sm"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#0077ff] shadow-sm hover:opacity-80 transition-opacity">
+            <i class="fa-brands fa-vk text-sm"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="px-6 md:px-16 lg:px-[135px] py-12">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <div>
+        <h3 class="font-bold text-sm text-[#2d313f] mb-4">Доска объявлений</h3>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Объявления</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Магазины</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Благотворительность</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Личный кабинет</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-sm text-[#2d313f] mb-4">Сервисный центр</h3>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Что мы чиним</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Адреса сервисных центров</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-sm text-[#2d313f] mb-4">Интернет-магазин</h3>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Каталог товаров</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Доставка и оплата</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Корзина</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Личный кабинет</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Контакты</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Вакансии</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-sm text-[#2d313f] mb-4">Пользователям</h3>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Гарантии</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Доставка и оплата</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Служба поддержки</a></li>
+          <li><a href="#" class="hover:text-[#00b22d] transition-colors">Вопрос-ответ</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="px-6 md:px-16 lg:px-[135px] py-5 bg-white border-t border-gray-100 text-xs text-gray-500">
+    <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2">
+        <a href="#" class="hover:text-gray-800 transition-colors">Политика конфиденциальности</a>
+        <a href="#" class="hover:text-gray-800 transition-colors">Пользовательское соглашение</a>
+        <a href="#" class="hover:text-gray-800 transition-colors">Использование cookies</a>
+        <a href="#" class="hover:text-gray-800 transition-colors">Карта сайта</a>
+      </div>
+
+      <div class="whitespace-nowrap text-gray-400">
+        Dily.ru <span class="ml-2">2021©</span>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
 </body>
+
 </html>
